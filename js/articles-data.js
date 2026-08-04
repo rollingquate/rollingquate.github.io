@@ -1,6 +1,20 @@
 /* RollingQuate 文章清单（JS 内嵌版，由 admin-generator 自动维护） */
 window.RQ_ARTICLES = [
   {
+    "id": "20260801-114503",
+    "title": "八一",
+    "date": "2026-08-01",
+    "category": "info",
+    "categoryName": "信息发布",
+    "summary": "热烈祝贺建军99周年!",
+    "image": "images/20260801-114503.png",
+    "file": "articles/20260801-114503.html",
+    "author": "FALLEN",
+    "tags": [
+      "庆祝"
+    ]
+  },
+  {
     "id": "20260804-090813",
     "title": "1为人体",
     "date": "2026-08-04",
