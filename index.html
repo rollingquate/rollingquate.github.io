@@ -81,6 +81,16 @@
 
         <!-- ===== 左侧侧边菜单栏 ===== -->
         <aside class="sidebar">
+            <div class="box">
+                <div class="box-title"><h2>文章搜索</h2></div>
+                <div class="box-body">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="搜索文章标题/摘要">
+                        <button class="search-btn" id="searchBtn">搜索</button>
+                        <ul class="search-results" id="searchResults"></ul>
+                    </div>
+                </div>
+            </div>
             <div class="box side-menu">
                 <div class="box-title"><h2>快捷导航</h2></div>
                 <ul>
@@ -178,6 +188,16 @@
                     </div>
                 </div>
             </div>
+            <div class="box right-box">
+                <div class="box-title"><h2>应用推荐</h2></div>
+                <div class="box-body" id="homeAppRecommend"></div>
+            </div>
+            <div class="box right-box">
+                <div class="box-title"><h2>访问统计</h2></div>
+                <div class="box-body visitor-count">
+                    累计访问：<span id="visitorCount">--</span> 次
+                </div>
+            </div>
         </aside>
 
     </div>
@@ -226,6 +246,7 @@
         rqRenderNewsList("homeTeamNews", "team-news", 6);   // 团队新闻
         rqRenderNewsList("homeInfo", "info", 6);            // 信息发布
         rqRenderRightNotice("rightNotice", 7);              // 右侧最新发布
+        rqRenderAppRecommend("homeAppRecommend", 3);        // 应用推荐
     </script>
 </body>
 </html>

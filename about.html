@@ -76,6 +76,16 @@
 
         <!-- 左侧侧边菜单栏 -->
         <aside class="sidebar">
+            <div class="box">
+                <div class="box-title"><h2>文章搜索</h2></div>
+                <div class="box-body">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="搜索文章标题/摘要">
+                        <button class="search-btn" id="searchBtn">搜索</button>
+                        <ul class="search-results" id="searchResults"></ul>
+                    </div>
+                </div>
+            </div>
             <div class="box side-menu">
                 <div class="box-title"><h2>团队概况</h2></div>
                 <ul>
@@ -164,6 +174,12 @@
                     <a href="https://qm.qq.com/q/5bF26oRxpS" target="_blank" rel="noopener">官方①群｜联合国</a>
                     <a href="https://qm.qq.com/q/jAQxHOU1cQ" target="_blank" rel="noopener">官方②群 Rolling Eclipse Xplode</a>
                     <a href="https://qm.qq.com/q/l94nU3nsT6" target="_blank" rel="noopener">官方①群 Rolling Eclipse Xplode</a>
+                </div>
+            </div>
+            <div class="box right-box">
+                <div class="box-title"><h2>访问统计</h2></div>
+                <div class="box-body visitor-count">
+                    累计访问：<span id="visitorCount">--</span> 次
                 </div>
             </div>
         </aside>
