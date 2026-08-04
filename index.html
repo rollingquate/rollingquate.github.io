@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollingQuate 创作信息公示平台 - 首页</title>
+    <meta name="description" content="RollingQuate 创作信息公示平台，滚动天空饭制同人爱好者创作社群。发布团队动态、创作专栏、专题汇总等内容。">
+    <meta name="keywords" content="RollingQuate,滚动的天空,饭制,同人,关卡创作,游戏">
+    <meta name="author" content="FALLEN">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RollingQuate 创作信息公示平台 - 首页">
+    <meta property="og:description" content="RollingQuate 创作信息公示平台，滚动天空饭制同人爱好者创作社群。发布团队动态、创作专栏、专题汇总等内容。">
+    <meta property="og:site_name" content="RollingQuate 创作信息公示平台">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="RollingQuate 创作信息公示平台 - 首页">
+    <meta name="twitter:description" content="RollingQuate 创作信息公示平台，滚动天空饭制同人爱好者创作社群。发布团队动态、创作专栏、专题汇总等内容。">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+    <!-- ============ 顶部 LOGO 横幅区 ============ -->
+    <div class="top-banner">
+        <div class="container">
+            <div class="logo-area">
+                <div class="logo-placeholder">RQ</div>
+                <div class="site-title">
+                    <h1>RollingQuate </h1>
+                    <p class="subtitle"></p>
+                </div>
+            </div>
+            <div class="top-right" id="topDate"></div>
+        </div>
+    </div>
+
+    <!-- ============ 页眉免责声明条 ============ -->
+    <div class="disclaimer-bar">
+        【重要声明：本站为滚动的天空饭制同人爱好者网站】
+    </div>
+
+    <!-- ============ 蓝色一级主导航栏 ============ -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" data-nav="home">首页</a></li>
+                <li><a href="info.html" data-nav="info">信息发布</a></li>
+                <li><a href="team-news.html" data-nav="team-news">团队新闻</a></li>
+                <li><a href="creation-column.html" data-nav="creation">创作专栏</a></li>
+                <li><a href="member-interaction.html" data-nav="member">社员互动</a></li>
+                <li><a href="special-topics.html" data-nav="special">专题汇总</a></li>
+                <li><a href="app.html" data-nav="apps">应用天地</a></li>
+                <li><a href="about.html" data-nav="about">团队概况</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============ 二级子导航（面包屑） ============ -->
+    <div class="sub-nav">
+        <div class="container">
+            <div class="crumb">
+                <a href="index.html">首页</a>
+            </div>
+            <div class="sub-tabs">
+                <a href="info.html" class="active">信息发布</a>
+                <a href="team-news.html">团队新闻</a>
+                <a href="creation-column.html">创作专栏</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ 主体三栏布局 ============ -->
+    <div class="main-layout container">
+
+        <!-- ===== 左侧侧边菜单栏 ===== -->
+        <aside class="sidebar">
+            <div class="box side-menu">
+                <div class="box-title"><h2>快捷导航</h2></div>
+                <ul>
+                    <li><a href="join.html">入队申请指引</a></li>
+                    <li><a href="about.html">团队概况</a></li>
+                    <li><a href="info.html">信息发布</a></li>
+                    <li><a href="creation-column.html">创作专栏</a></li>
+                    <li><a href="team-news.html">团队新闻</a></li>
+                    <li><a href="special-topics.html">专题汇总</a></li>
+                </ul>
+            </div>
+            <div class="box side-contact">
+                <div class="box-title"><h2>联系方式</h2></div>
+                <div class="box-body">
+                    <div class="row"><span class="label">团队邮箱：</span><span class="val">cshusbs@gmail.com</span></div>
+                    <div class="row"><span class="label">网站负责人：</span><span class="val">FALLEN</span></div>
+                </div>
+            </div>
+            <div class="box side-menu">
+                <div class="box-title"><h2>入队通道</h2></div>
+                <div class="box-body" style="font-size:13px;color:#c0392b;line-height:1.8;">
+                    现阶段团队编制已满，<br>暂不对外开放招募，<br>入队通道临时关闭。
+                </div>
+            </div>
+        </aside>
+
+        <!-- ===== 中间资讯主区域 ===== -->
+        <main class="content">
+
+            <!-- 头部横幅（由 site-config.js 动态控制，管理员可通过工具上传替换） -->
+            <div class="focus-banner" id="focusBanner">
+                <div class="placeholder-text" id="bannerPlaceholder">
+                    头部主视觉占位 · 管理员可通过本地工具上传截图替换<br>
+                    （建议尺寸 1168 × 300）
+                </div>
+            </div>
+
+            <!-- 创作专栏：图文推荐 -->
+            <div class="box">
+                <div class="box-title">
+                    <h2>创作专栏</h2>
+                    <a class="more" href="creation-column.html">更多 &gt;</a>
+                </div>
+                <div class="box-body" id="homeCreation"></div>
+            </div>
+
+            <!-- 团队新闻 / 信息发布 并排 -->
+            <div class="content-row">
+                <div class="box">
+                    <div class="box-title">
+                        <h2>团队新闻</h2>
+                        <a class="more" href="team-news.html">更多 &gt;</a>
+                    </div>
+                    <div class="box-body">
+                        <ul class="news-list" id="homeTeamNews"></ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <h2>信息发布</h2>
+                        <a class="more" href="info.html">更多 &gt;</a>
+                    </div>
+                    <div class="box-body">
+                        <ul class="news-list" id="homeInfo"></ul>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- ===== 右侧信息栏 ===== -->
+        <aside class="right-col">
+            <div class="box right-box">
+                <div class="box-title"><h2>最新发布</h2><a class="more" href="info.html">更多 &gt;</a></div>
+                <div class="box-body">
+                    <ul class="notice-list" id="rightNotice"></ul>
+                </div>
+            </div>
+            <div class="box right-box group-links">
+                <div class="box-title"><h2>官方社群</h2></div>
+                <div class="box-body">
+                    <a href="https://qm.qq.com/q/5bF26oRxpS" target="_blank" rel="noopener">官方①群｜联合国</a>
+                    <a href="https://qm.qq.com/q/jAQxHOU1cQ" target="_blank" rel="noopener">官方②群 Rolling Eclipse Xplode</a>
+                    <a href="https://qm.qq.com/q/l94nU3nsT6" target="_blank" rel="noopener">官方①群 Rolling Eclipse Xplode</a>
+                </div>
+            </div>
+            <div class="box right-box">
+                <div class="box-title"><h2>快捷入口</h2></div>
+                <div class="box-body">
+                    <div class="quick-entry">
+                        <a href="join.html">入队指引</a>
+                        <a href="about.html">团队概况</a>
+                        <a href="creation-column.html">创作专栏</a>
+                        <a href="special-topics.html">专题汇总</a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+    </div>
+
+    <!-- ============ 页脚 ============ -->
+    <footer>
+        <div class="footer-main">
+            <div class="container footer-cols">
+                <div class="footer-col">
+                    <h4>关于本站</h4>
+                    <p>RollingQuate团队官网</p>
+                    <p>滚动天空饭制同人爱好者创作社群</p>
+                    <p></p>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <p>团队联系邮箱：cshusbs@gmail.com</p>
+                    <p>网站负责人：FALLEN</p>
+                </div>
+                <div class="footer-col">
+                    <h4>官方社群</h4>
+                    <div class="footer-groups">
+                        <a href="https://qm.qq.com/q/5bF26oRxpS" target="_blank" rel="noopener">官方①群｜联合国</a>
+                        <a href="https://qm.qq.com/q/jAQxHOU1cQ" target="_blank" rel="noopener">官方②群 Rolling Eclipse Xplode</a>
+                        <a href="https://qm.qq.com/q/l94nU3nsT6" target="_blank" rel="noopener">官方①群 Rolling Eclipse Xplode</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="footer-disclaimer">【重要声明：本站对一切圈内事件保持中立】</p>
+                <p>© RollingQuate 创作信息公示平台 · 网站负责人 FALLEN · 邮箱 cshusbs@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ 公共脚本 ============ -->
+    <script src="js/site-config.js"></script>
+    <script src="js/articles-data.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        // 首页初始化 + 各区域清单渲染
+        rqInit();
+        rqRenderFigureList("homeCreation", "creation", 4);  // 创作专栏图文推荐
+        rqRenderNewsList("homeTeamNews", "team-news", 6);   // 团队新闻
+        rqRenderNewsList("homeInfo", "info", 6);            // 信息发布
+        rqRenderRightNotice("rightNotice", 7);              // 右侧最新发布
+    </script>
+</body>
+</html>

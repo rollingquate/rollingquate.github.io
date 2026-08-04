@@ -1,0 +1,9 @@
+# RollingQuate 创作信息公示平台 - 搜索引擎爬虫配置
+User-agent: *
+Allow: /
+Disallow: /admin-generator.html
+Disallow: /build-admin.js
+Disallow: /js/admin-*.js
+
+# Sitemap
+Sitemap: https://fallen0757.github.io/rollingquate/sitemap.xml
