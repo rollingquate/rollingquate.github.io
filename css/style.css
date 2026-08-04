@@ -620,6 +620,277 @@ footer {
 }
 
 /* ============================================================
+   回到顶部按钮
+   ============================================================ */
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 42px;
+    height: 42px;
+    background: #2363bb;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.back-to-top:hover {
+    background: #1a4f96;
+    color: #fff;
+}
+
+/* ============================================================
+   上下篇导航
+   ============================================================ */
+.prev-next-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 20px;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+.prev-link, .next-link {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 14px;
+    border: 1px solid #e3e3e3;
+    background: #fafcff;
+    flex: 1;
+    min-width: 0;
+}
+.prev-link { align-items: flex-start; }
+.next-link { align-items: flex-end; text-align: right; }
+.prev-link:hover, .next-link:hover {
+    border-color: #2363bb;
+    background: #f5f9ff;
+    color: #333;
+}
+.prev-link.disabled, .next-link.disabled {
+    color: #ccc;
+    cursor: default;
+    border-color: #eee;
+}
+.pn-label {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 4px;
+}
+.pn-title {
+    font-size: 14px;
+    color: #2363bb;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+/* ============================================================
+   首页应用推荐列表
+   ============================================================ */
+.app-recommend-list { padding: 6px 0; }
+.app-recommend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #e8e8e8;
+}
+.app-recommend-item:last-child { border-bottom: none; }
+.app-rec-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #f0f5fb;
+    border: 1px solid #dce6f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.app-rec-icon img { width: 100%; height: 100%; object-fit: cover; }
+.app-rec-icon .placeholder { color: #aac0e0; font-size: 10px; }
+.app-rec-info { flex: 1; min-width: 0; }
+.app-rec-info h4 {
+    font-size: 13px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 2px;
+}
+.app-rec-info .version {
+    font-size: 11px;
+    color: #2363bb;
+    background: #f5f9ff;
+    border: 1px solid #d6e4f5;
+    padding: 0 6px;
+}
+.app-recommend-item .app-download {
+    padding: 4px 12px;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   搜索框
+   ============================================================ */
+.search-box {
+    position: relative;
+    margin-bottom: 16px;
+}
+.search-box input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccd5e0;
+    font-size: 13px;
+    font-family: inherit;
+    background: #fff;
+}
+.search-box input:focus {
+    border-color: #2363bb;
+    outline: none;
+}
+.search-box .search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0 14px;
+    background: #2363bb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: inherit;
+}
+.search-box .search-btn:hover { background: #1a4f96; }
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #2363bb;
+    border-top: none;
+    z-index: 100;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+}
+.search-results li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-results li:last-child { border-bottom: none; }
+.search-results li a { color: #333; font-size: 13px; }
+.search-results li a:hover { color: #2363bb; }
+.search-results li .date { color: #999; font-size: 12px; flex-shrink: 0; margin-left: 10px; }
+
+/* ============================================================
+   标签云
+   ============================================================ */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0;
+}
+.tag-item {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #f5f9ff;
+    border: 1px solid #d6e4f5;
+    color: #2363bb;
+    font-size: 12px;
+}
+.tag-item:hover {
+    background: #2363bb;
+    color: #fff;
+    border-color: #2363bb;
+}
+
+/* ============================================================
+   文章目录导航
+   ============================================================ */
+.toc-list { padding: 6px 0; }
+.toc-list li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #eee;
+}
+.toc-list li:last-child { border-bottom: none; }
+.toc-list li a {
+    font-size: 13px;
+    color: #555;
+    padding-left: 12px;
+    border-left: 2px solid #d6e4f5;
+}
+.toc-list li a:hover {
+    color: #2363bb;
+    border-left-color: #2363bb;
+}
+
+/* ============================================================
+   访客计数
+   ============================================================ */
+.visitor-count {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    padding: 4px 0;
+}
+.visitor-count span {
+    color: #2363bb;
+    font-weight: bold;
+}
+
+/* ============================================================
+   响应式适配（移动端）
+   ============================================================ */
+@media screen and (max-width: 1240px) {
+    .container { width: 96%; max-width: 1200px; }
+}
+
+@media screen and (max-width: 900px) {
+    /* 三栏变两栏：隐藏右侧栏 */
+    .right-col { display: none; }
+    .sidebar { width: 180px; }
+    .main-nav li a { padding: 13px 16px; font-size: 14px; }
+    .content-row { flex-direction: column; }
+    .app-card { width: 100%; }
+}
+
+@media screen and (max-width: 640px) {
+    /* 单栏布局 */
+    .sidebar { display: none; }
+    .main-layout { padding: 10px 0; }
+    .top-banner .container { padding: 14px 0; flex-wrap: wrap; }
+    .site-title h1 { font-size: 20px; }
+    .site-title .subtitle { font-size: 11px; }
+    .logo-placeholder { width: 48px; height: 48px; font-size: 16px; }
+    .main-nav ul { flex-wrap: wrap; }
+    .main-nav li a { padding: 10px 12px; font-size: 13px; border-right: none; border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .sub-nav .sub-tabs { display: none; }
+    .focus-banner { height: 180px; }
+    .prev-next-nav { flex-direction: column; }
+    .footer-cols { flex-direction: column; gap: 16px; }
+    .back-to-top { right: 12px; bottom: 12px; width: 36px; height: 36px; line-height: 36px; font-size: 14px; }
+}
+
+/* ============================================================
    管理工具 admin-generator.html 专用样式
    ============================================================ */
 body.admin-body { background: #eef2f7; }
